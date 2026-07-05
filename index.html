@@ -1,169 +1,202 @@
-<!DOCTYPE html>
+E html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cho Thuê Limousine tại Đà Nẵng - 0901928739</title>
-  <style>
-    * {margin:0;padding:0;box-sizing:border-box}
-    body {font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
-    .hero {
-      position:relative;
-      min-height:100vh;
-      background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)),url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=900') center/cover;
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-      align-items:center;
-      padding:20px;
-      color:white;
-      text-align:center
-    }
-    .logo {
-      position:absolute;
-      top:25px;
-      left:20px;
-      display:flex;
-      align-items:center;
-      gap:8px;
-      font-size:20px;
-      font-weight:700
-    }
-    .logo-icon {
-      background:#00c853;
-      width:32px;
-      height:32px;
-      border-radius:8px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-size:18px
-    }
-    .badge {
-      background:#00c853;
-      color:white;
-      padding:8px 18px;
-      border-radius:20px;
-      font-size:14px;
-      font-weight:600;
-      margin-bottom:20px;
-      display:inline-flex;
-      align-items:center;
-      gap:6px
-    }
-    h1 {
-      font-size:36px;
-      font-weight:800;
-      line-height:1.2;
-      margin-bottom:12px;
-      text-shadow:0 2px 8px rgba(0,0,0,0.3)
-    }
-    .location {
-      color:#00e676;
-      font-size:18px;
-      font-weight:600;
-      margin-bottom:20px
-    }
-    .desc {
-      font-size:15px;
-      line-height:1.6;
-      margin-bottom:30px;
-      max-width:500px;
-      opacity:0.95
-    }
-    .btn {
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px;
-      width:100%;
-      max-width:400px;
-      margin:12px auto;
-      padding:16px;
-      border-radius:50px;
-      font-size:18px;
-      font-weight:700;
-      text-decoration:none;
-      box-shadow:0 4px 15px rgba(0,0,0,0.2)
-    }
-    .btn-call {background:#00c853;color:white}
-    .btn-zalo {background:#0068ff;color:white}
-    .features {
-      position:absolute;
-      bottom:30px;
-      left:20px;
-      text-align:left
-    }
-    .features p {
-      margin:8px 0;
-      font-size:16px;
-      display:flex;
-      align-items:center;
-      gap:10px
-    }
-    .features p::before {
-      content:'✓';
-      background:#00c853;
-      color:white;
-      width:22px;
-      height:22px;
-      border-radius:50%;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-size:14px;
-      font-weight:bold
-    }
-    .call-float {
-      position:fixed;
-      bottom:20px;
-      right:20px;
-      background:#00c853;
-      color:white;
-      width:60px;
-      height:60px;
-      border-radius:50%;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-size:28px;
-      box-shadow:0 4px 15px rgba(0,0,0,0.3);
-      z-index:999;
-      text-decoration:none
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danang Limo - Cho Thuê Limousine 4-7-16 Chỗ Đà Nẵng</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            margin-bottom: 60px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .nav { display: flex; gap: 30px; align-items: center; }
+        .nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.3s;
+        }
+        .nav a:hover { color: white; }
+        
+        .hero { text-align: center; padding: 40px 20px 80px; }
+        
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(251, 191, 36, 0.15);
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            margin-bottom: 30px;
+            color: #fbbf24;
+        }
+        
+        h1 {
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #ffffff, #e2e8f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #94a3b8;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+        
+        .car-types {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .car-type {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+        
+        .btn-group {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        
+        .btn-call {
+            background: #10b981;
+            color: white;
+            box-shadow: 0 4px 20px rgba(16, 185, 129, 0.4);
+        }
+        .btn-call:hover {
+            background: #059669;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(16, 185, 129, 0.6);
+        }
+        
+        .btn-zalo {
+            background: #0068ff;
+            color: white;
+            box-shadow: 0 4px 20px rgba(0, 104, 255, 0.4);
+        }
+        .btn-zalo:hover {
+            background: #0052cc;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(0, 104, 255, 0.6);
+        }
+        
+        .hotline {
+            margin-top: 50px;
+            font-size: 20px;
+            color: #fbbf24;
+            font-weight: 700;
+        }
+        .hotline-number {
+            font-size: 32px;
+            color: #fbbf24;
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 36px; }
+            .nav { display: none; }
+            .header { justify-content: center; }
+            .btn-group { flex-direction: column; align-items: center; }
+            .cta-btn { width: 100%; max-width: 300px; justify-content: center; }
+        }
+    </style>
 </head>
 <body>
-  <div class="hero">
-    <div class="logo">
-      <div class="logo-icon">🚐</div>
-      <span>Danang Limo</span>
+    <div class="container">
+        <header class="header">
+            <div class="logo">Danang Limo 🚐</div>
+            <nav class="nav">
+                <a href="#dich-vu">Dịch vụ</a>
+                <a href="#bang-gia">Bảng giá</a>
+                <a href="#lien-he">Liên hệ</a>
+            </nav>
+        </header>
+        
+        <section class="hero">
+            <div class="badge">
+                ⭐ Dịch Vụ Xe Cao Cấp #1 Đà Nẵng
+            </div>
+            
+            <h1>Cho Thuê Limousine<br>tại Đà Nẵng</h1>
+            
+            <p class="subtitle">
+                Chuyên cho thuê các dòng xe Limousine đời mới, nội thất VIP sang trọng. Tài xế chuyên nghiệp, phục vụ 24/7.
+            </p>
+            
+            <div class="car-types">
+                <div class="car-type">🚗 Xe 4 chỗ</div>
+                <div class="car-type">🚐 Xe 7 chỗ</div>
+                <div class="car-type">🚌 Xe 16 chỗ</div>
+            </div>
+            
+            <div class="btn-group">
+                <a href="tel:0901928739" class="cta-btn btn-call">
+                    📞 Gọi Đặt Xe Ngay
+                </a>
+                <a href="https://zalo.me/0901928739" class="cta-btn btn-zalo" target="_blank">
+                    💬 Nhắn Zalo Tư Vấn
+                </a>
+            </div>
+            
+            <div class="hotline">
+                Hotline 24/7
+                <div class="hotline-number">0901.928.739</div>
+            </div>
+        </section>
     </div>
-    
-    <div class="badge">⭐ Dịch Vụ Xe Cao Cấp #1 Đà Nẵng</div>
-    
-    <h1>Cho Thuê Limousine<br>tại Đà Nẵng</h1>
-    
-    <div class="location">Đà Nẵng - Bà Nà - Hội An - Huế</div>
-    
-    <p class="desc">
-      Xe 4 chỗ, 7 chỗ, 16 chỗ, Limousine 9c, 12c, Carnival. Xe đời mới, tài xế chuyên nghiệp, đưa đón sân bay, city tour, hợp đồng du lịch.
-    </p>
-    
-    <a href="tel:0901928739" class="btn btn-call">
-      📞 Gọi Đặt Xe Ngay.
-    </a>
-    <a href="https://zalo.me/0901928739" class="btn btn-zalo">
-      💬 Chat Zalo
-    </a>
-    
-    <div class="features">
-      <p>Xe đời mới 2023-2025</p>
-      <p>Tài xế chuyên nghiệp</p>
-      <p>Giá tốt nhất</p>
-    </div>
-  </div>
-  
-  <a href="tel:0901928739" class="call-float">📞</a>
 </body>
 </html>
