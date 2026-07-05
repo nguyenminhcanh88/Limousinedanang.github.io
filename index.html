@@ -3,48 +3,167 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cho Thuê Limousine Đà Nẵng 0901928739</title>
+  <title>Cho Thuê Limousine tại Đà Nẵng - 0901928739</title>
   <style>
     * {margin:0;padding:0;box-sizing:border-box}
-    body {font-family:Arial,sans-serif}
-    .hero {position:relative;height:100vh;background:url('https://images.unsplash.com/photo-1563720223185-11003d516935?w=900') center/cover;display:flex;align-items:center;justify-content:center}
-    .hero::before {content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.4)}
-    .hero-content {position:relative;z-index:2;text-align:center;padding:20px;width:100%}
-    .btn {display:block;width:90%;max-width:400px;margin:15px auto;padding:18px;border-radius:50px;font-size:20px;font-weight:bold;text-decoration:none}
-    .btn-call {background:#00c853;color:white;box-shadow:0 4px 15px rgba(0,200,83,0.4)}
-    .btn-zalo {background:#0068ff;color:white;box-shadow:0 4px 15px rgba(0,104,255,0.4)}
-    .features {position:absolute;bottom:80px;left:20px;color:white;text-align:left}
-    .features p {margin:8px 0;font-size:18px;display:flex;align-items:center}
-    .features p::before {content:'✅';margin-right:10px;font-size:20px}
-    .hotline-bg {position:absolute;bottom:0;width:100%;background:rgba(0,0,0,0.7);color:#ffc107;font-size:40px;font-weight:bold;padding:10px;letter-spacing:2px}
-    .arrow-down {position:absolute;bottom:20px;left:50%;transform:translateX(-50%);color:white;font-size:30px;animation:bounce 2s infinite}
-    @keyframes bounce {0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(10px)}}
-    .section {padding:40px 20px;text-align:center}
-    .section h3 {color:#00c853;font-size:16px;margin-bottom:10px;text-transform:uppercase}
-    .section h2 {font-size:28px;margin-bottom:15px;color:#1a1a1a}
-    .section p {color:#666;font-size:16px;line-height:1.6}
-    .call-float {position:fixed;bottom:20px;right:20px;background:#00c853;color:white;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 4px 15px rgba(0,0,0,0.3);z-index:999;text-decoration:none}
+    body {font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}
+    .hero {
+      position:relative;
+      min-height:100vh;
+      background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)),url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=900') center/cover;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      padding:20px;
+      color:white;
+      text-align:center
+    }
+    .logo {
+      position:absolute;
+      top:25px;
+      left:20px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      font-size:20px;
+      font-weight:700
+    }
+    .logo-icon {
+      background:#00c853;
+      width:32px;
+      height:32px;
+      border-radius:8px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:18px
+    }
+    .badge {
+      background:#00c853;
+      color:white;
+      padding:8px 18px;
+      border-radius:20px;
+      font-size:14px;
+      font-weight:600;
+      margin-bottom:20px;
+      display:inline-flex;
+      align-items:center;
+      gap:6px
+    }
+    h1 {
+      font-size:36px;
+      font-weight:800;
+      line-height:1.2;
+      margin-bottom:12px;
+      text-shadow:0 2px 8px rgba(0,0,0,0.3)
+    }
+    .location {
+      color:#00e676;
+      font-size:18px;
+      font-weight:600;
+      margin-bottom:20px
+    }
+    .desc {
+      font-size:15px;
+      line-height:1.6;
+      margin-bottom:30px;
+      max-width:500px;
+      opacity:0.95
+    }
+    .btn {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      width:100%;
+      max-width:400px;
+      margin:12px auto;
+      padding:16px;
+      border-radius:50px;
+      font-size:18px;
+      font-weight:700;
+      text-decoration:none;
+      box-shadow:0 4px 15px rgba(0,0,0,0.2)
+    }
+    .btn-call {background:#00c853;color:white}
+    .btn-zalo {background:#0068ff;color:white}
+    .features {
+      position:absolute;
+      bottom:30px;
+      left:20px;
+      text-align:left
+    }
+    .features p {
+      margin:8px 0;
+      font-size:16px;
+      display:flex;
+      align-items:center;
+      gap:10px
+    }
+    .features p::before {
+      content:'✓';
+      background:#00c853;
+      color:white;
+      width:22px;
+      height:22px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:14px;
+      font-weight:bold
+    }
+    .call-float {
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#00c853;
+      color:white;
+      width:60px;
+      height:60px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:28px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.3);
+      z-index:999;
+      text-decoration:none
+    }
   </style>
 </head>
 <body>
   <div class="hero">
-    <div class="hero-content">
-      <a href="tel:0901928739" class="btn btn-call">📞 Gọi Đặt Xe Ngay</a>
-      <a href="https://zalo.me/0901928739" class="btn btn-zalo">💬 Chat Zalo</a>
+    <div class="logo">
+      <div class="logo-icon">🚐</div>
+      <span>Danang Limo</span>
     </div>
+    
+    <div class="badge">⭐ Dịch Vụ Xe Cao Cấp #1 Đà Nẵng</div>
+    
+    <h1>Cho Thuê Limousine<br>tại Đà Nẵng</h1>
+    
+    <div class="location">Đà Nẵng - Bà Nà - Hội An - Huế</div>
+    
+    <p class="desc">
+      Xe 4 chỗ, 7 chỗ, 16 chỗ, Limousine 9c, 12c, Carnival. Xe đời mới, tài xế chuyên nghiệp, đưa đón sân bay, city tour, hợp đồng du lịch.
+    </p>
+    
+    <a href="tel:0901928739" class="btn btn-call">
+      📞 Gọi Đặt Xe Ngay
+    </a>
+    <a href="https://zalo.me/0901928739" class="btn btn-zalo">
+      💬 Chat Zalo
+    </a>
+    
     <div class="features">
       <p>Xe đời mới 2023-2025</p>
       <p>Tài xế chuyên nghiệp</p>
       <p>Giá tốt nhất</p>
     </div>
-    <div class="hotline-bg">Hotline: 0901.928.739</div>
-    <div class="arrow-down">⌄</div>
   </div>
-  <div class="section">
-    <h3>DÒNG XE CAO CẤP</h3>
-    <h2>Đội Xe Limousine & Carnival</h2>
-    <p>Đa dạng lựa chọn từ 4 chỗ đến Limousine 12 chỗ, phù hợp mọi nhu cầu di chuyển</p>
-  </div>
+  
   <a href="tel:0901928739" class="call-float">📞</a>
 </body>
 </html>
